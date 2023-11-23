@@ -13,6 +13,8 @@ namespace WebApplication1.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
         public int MyProperty { get; set; }
+        public int MyProperty1 { get; set; }
+
 
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
         {
