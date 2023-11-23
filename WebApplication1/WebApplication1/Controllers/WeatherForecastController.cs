@@ -13,7 +13,10 @@ namespace WebApplication1.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
         public int MyProperty { get; set; }
-        public int MyProperty1 { get; set; }
+        public int MyProperty1212 { get; set; }
+
+        public int MyPropertySubMain { get; set; }
+
 
 
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
@@ -24,6 +27,15 @@ namespace WebApplication1.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
+            try
+            {
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
