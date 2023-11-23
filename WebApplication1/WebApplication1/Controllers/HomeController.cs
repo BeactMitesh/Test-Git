@@ -8,7 +8,7 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
-        public IActionResult Index1()
+        public IActionResult Index1_Update()
         {
             return View();
         }
